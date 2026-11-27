@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://pfija0ss888r"]
+
+[ext_resource type="Script" uid="uid://c8txmahggbpx1" path="res://Player/Player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://cok1evp7r1s26" path="res://Player/dejiko.png" id="2_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_32gta"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_32gta"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_onrkg")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Player" type="Area2D" unique_id=1930220809]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=289840703]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_32gta")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1921339205]
+position = Vector2(-21, -18)
+sprite_frames = SubResource("SpriteFrames_32gta")
