@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Project_DEJIKO"
+run/main_scene="uid://dfb6pduh1erqk"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
